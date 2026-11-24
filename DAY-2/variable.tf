@@ -1,11 +1,11 @@
-variable "ami-id" {
+variable "ami_id" {
   description = "The AMI ID to use for the instance"
-  default     = "ami-09a2f74ce8538e414"
+  default     = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
   type        = string
 }
 
 variable "instance_type" {
-  description = "The type of instance to use"
-  default     = "t3.micro"
+  description = "The type of instance to create"
+  default     = "t2.micro"
   type        = string
 }
